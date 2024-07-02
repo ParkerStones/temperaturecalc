@@ -4,4 +4,4 @@
 
 **Valar Morghulis**
 
-:dromedary_camel: [Visit the LIVE WEBSITE on the INTERNET by clicking this link.]([url](https://parkerstones.github.io/temperaturecalc/)) :dromedary_camel:
+:dromedary_camel: :dromedary_camel: Visit the LIVE WEBSITE on the INTERNET by clicking this link. :point_right: https://parkerstones.github.io/temperaturecalc/ 
