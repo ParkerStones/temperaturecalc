@@ -9,75 +9,71 @@
 </head>
 
 <body>
-    <div class="items-right">
-        <a href="#">
-            <i class="fa fa-linkedin-square" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fa fa-youtube-play" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-        <a href="#s">
-            <i class="fa fa-twitter-square" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-    </div>
-    <div class="items-left">
-        <a href="#">
-            <i class="fa fa-linkedin-square" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fa fa-youtube-play" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-        <a href="#s">
-            <i class="fa fa-twitter-square" style="font-size: 24px; color: #fff">
-            </i>
-        </a>
-    </div>
     <div class="container">
         <h1>Temperature Converter</h1>
-        <br>
-        <div class="container-qute">
-            <p>More murders are committed at ninety-two degrees Fahrenheit than any other temperature.
-                Over one hundred, it's too hot to move. Under ninety, cool enough to survive.
-                But right at ninety-two degrees lies the apex of irritability, everything is itches and hair and sweat
-                and
-                cooked pork.
-
-                The brain becomes a rat rushing around a red-hot maze. The least thing - a word, a look, a sound, the
-                drop
-                of a hair and - irritable murder.
-                Irritable murder, there's a pretty and terrifying phrase for you. ~ Ray Bradbury
-            </p>
+        <button type="button" class="collapser" style="text-align: center; border-radius: 20%; text-size-adjust: 12px;">Quote</button>
+        <div class="content">
+            <article><p style="font-size: 22px; text-align: center;"><br>
+                More murders are committed at 92°F than any other temperature.
+                Over 100, it's too hot to move. Under 90, cool enough to survive.
+                But right at 92° lies the apex of irritability, everything is itches
+                and hair and sweat and cooked pork. The brain becomes a rat rushing around a red-hot maze.
+                The least thing - a word, a look, a sound, the drop of a hair and - irritable murder.<br>
+                Irritable murder, there's a pretty and terrifying phrase for you.
+                <br>
+                <br>
+                <strong>~ Ray Bradbury</strong></p>
+            </article>
         </div>
-        <br>
-        <br>
         <br>
         <div class="converter-row">
             <div class="col">
-                <label>Fahrenheit (°F)</label>
+                <label>Fahrenheit °F </label>
                 <br>
                 <br>
                 <input type="number" id="fahrenheit">
             </div>
-
             <div class="col">
-                <label>Celsius (°C)</label>
+                <label>Celsius °C</label>
                 <br>
                 <br>
                 <input type="number" id="celsius">
             </div>
             <div class="col">
-                <label>Kelvin (K)</label>
+                <label>Kelvin K</label>
                 <br>
                 <br>
                 <input type="number" id="kelvin">
             </div>
         </div>
     </div>
+    <p style="text-align: center; font-size: 16px;">made with ❤️ by <strong>parkerStones</strong> </p>
+    <footer>
+        <center>
+            <a href="#"><i class="fa fa-linkedin-square" style="font-size: 24px; color: #0a0a0a">
+            </i>LinkedIn</a>
+            <a href="#"><i class="fa fa-youtube-play" style="font-size: 24px; color: #0d0c0c">
+            </i>YouTube</a>
+            <a href="#"><i class="fa fa-twitter-square" style="font-size: 24px; color: #070606">
+            </i>Twitter</a>
+        </center>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapser");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 
